@@ -1,0 +1,55 @@
+html{
+display: flex;
+flex-direction: column;
+
+}
+
+
+header {
+align-self: flex-start;
+background-color: blue;
+height: 200px;
+
+}
+
+.wrapper {
+flex: 1 1 auto;
+display: flex;
+
+}
+
+body {
+display: flex; /* crée un contexte flex pour ses enfants */
+flex-direction: column; /* affichage vertical */
+min-height: 100vh; /* toute la hauteur du viewport */
+padding: 1em;
+}
+
+
+nav{
+background-color: yellow;
+height: 300px;
+width: 10vw;
+}
+
+article{
+background-color: pink;
+height: 300px;
+width: 20em;
+
+}
+
+aside {;
+flex-flow: row nowrap;
+background-color: grey;
+height: 300px;
+width: 10em;
+
+}
+
+footer {
+align-self: flex-end;
+background-color: purple;
+height: 200px;
+
+}
