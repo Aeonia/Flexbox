@@ -4,52 +4,58 @@ flex-direction: column;
 
 }
 
+body {
+display: flex; 
+flex-direction: column; 
+min-height: 100vh; 
+text-align: center;
+}
 
 header {
-align-self: flex-start;
 background-color: blue;
-height: 200px;
+height: 10%;
 
 }
 
 .wrapper {
 flex: 1 1 auto;
 display: flex;
-
-}
-
-body {
-display: flex; /* crée un contexte flex pour ses enfants */
-flex-direction: column; /* affichage vertical */
-min-height: 100vh; /* toute la hauteur du viewport */
-padding: 1em;
+justify-content: space-between;
+padding: 1em; 
 }
 
 
 nav{
 background-color: yellow;
-height: 300px;
-width: 10vw;
+width: 25%;
 }
 
 article{
 background-color: pink;
-height: 300px;
-width: 20em;
+width: 50%;
 
 }
 
-aside {;
-flex-flow: row nowrap;
+aside {
 background-color: grey;
-height: 300px;
-width: 10em;
+width: 25%;
 
 }
 
 footer {
-align-self: flex-end;
-background-color: purple;
-height: 200px;
 
+background-color: purple;
+height: 5%;
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+
+    }
+    .wrapper {
+    	flex-direction: column;
+    }
 }
